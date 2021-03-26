@@ -1,0 +1,11 @@
+name: Donut
+version: .01
+main: donutcodes.donut.Donut
+api-version: 1.16
+load: POSTWORLD
+author: TeamDonut
+
+commands:
+  testgui:
+    description: Testing the gui
+    usage: /testgui
