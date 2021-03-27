@@ -6,6 +6,9 @@ load: POSTWORLD
 author: TeamDonut
 
 commands:
-  testgui:
+  sbmenu:
     description: Testing the gui
-    usage: /testgui
+    usage: /sbmenu
+  randomnumber:
+    description: Generates a random number!
+    usage: /randomnumber
