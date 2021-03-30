@@ -1,5 +1,5 @@
 name: Donut
-version: .01
+version: .02
 main: donutcodes.donut.Donut
 api-version: 1.16
 load: POSTWORLD
@@ -12,3 +12,18 @@ commands:
   randomnumber:
     description: Generates a random number!
     usage: /randomnumber
+  claimfancystick:
+    description: gui with fancy stick item
+    usage: /claimfancystick
+  clearchat:
+    description: Clears the chat!
+    usage: /clearchat
+  donutbroadcast:
+    description: Broadcast custom
+    usage: /donutbroadcast <message>
+  crystal:
+    description: used for diaglog
+    usage: /crystal
+  givegrapplinghook:
+    description: gives a grappling hook
+    usage: /givegrapplinghook
