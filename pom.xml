@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>donutcodes</groupId>
-    <artifactId>donut</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>Donut</artifactId>
+    <version>0.01-prerelease2</version>
     <packaging>jar</packaging>
 
     <name>Donut</name>
