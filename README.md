@@ -10,6 +10,8 @@ Commands:
 	
 /clearchat - Clears the chat.
 
+/giveaspectoftheend - Gives a functional aspect of the end!
+
 Features:
 
 Grappling Hook - Swing yourself around!
