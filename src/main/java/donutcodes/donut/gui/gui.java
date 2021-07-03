@@ -1,20 +1,16 @@
 package donutcodes.donut.gui;
 
-import com.sun.tools.javac.jvm.Items;
 import org.bukkit.Bukkit;
-import org.bukkit.block.BrewingStand;
+import org.bukkit.ChatColor;
+import org.bukkit.Material;
+import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
-import org.bukkit.entity.Item;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
-import org.bukkit.ChatColor;
-import org.bukkit.Material;
-import org.bukkit.entity.Player;
-import org.bukkit.inventory.InventoryView;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -121,7 +117,6 @@ public class gui implements CommandExecutor, Listener {
         Player player = (Player) event.getWhoClicked();
         ItemStack clicked = event.getCurrentItem();
         if (clicked.getType() == Material.BLACK_STAINED_GLASS_PANE) {
-            player.sendMessage(prefix + ChatColor.BLUE + "You clicked on a Black Stained Glass Pane!");
             event.setCancelled(true);
         }
     }

@@ -1,21 +1,17 @@
 package donutcodes.donut.gui;
 
-import com.sun.tools.javac.jvm.Items;
 import org.bukkit.Bukkit;
-import org.bukkit.block.BrewingStand;
+import org.bukkit.ChatColor;
+import org.bukkit.Material;
+import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
 import org.bukkit.enchantments.Enchantment;
-import org.bukkit.entity.Item;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
-import org.bukkit.ChatColor;
-import org.bukkit.Material;
-import org.bukkit.entity.Player;
-import org.bukkit.inventory.InventoryView;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -108,6 +104,8 @@ public class claimfancystick implements CommandExecutor, Listener {
     public void InventoryClickEvent_CLAIMFANCYSTICK(InventoryClickEvent event) {
         Player player = (Player) event.getWhoClicked();
         ItemStack click = event.getCurrentItem();
+        if (click.getType()!=null) {
+        }
         if (click.getType() == Material.STICK) {
             if (event.getSlot() == 22) {
                 ItemStack fancystick = new ItemStack(Material.STICK);

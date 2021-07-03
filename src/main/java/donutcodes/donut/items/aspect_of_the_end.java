@@ -24,19 +24,18 @@ public class aspect_of_the_end implements CommandExecutor, Listener {
     @EventHandler
     public void onRightClick(PlayerInteractEvent e) {
         Player p = e.getPlayer();
-        if (p.getItemInHand().getItemMeta().getDisplayName().equals("§9Aspect of the End"))
-            if (e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK) {
-                Block b = p.getTargetBlock(null, 8);
-                Location loc = new Location(b.getWorld(), b.getX(), b.getY(), b.getZ(), p.getLocation().getYaw(), p.getLocation().getPitch());
-                p.teleport(loc);
-                p.playSound(loc, Sound.ENTITY_ENDERMAN_TELEPORT, 1.0F, 1.0F);
+            if (p.getItemInHand().getItemMeta().getDisplayName().equals("§9Aspect of the End"))
+                if (e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK || e !=null) {
+                    Block b = p.getTargetBlock(null, 8);
+                    Location loc = new Location(b.getWorld(), b.getX(), b.getY(), b.getZ(), p.getLocation().getYaw(), p.getLocation().getPitch());
+                    p.teleport(loc);
+                    p.playSound(loc, Sound.ENTITY_ENDERMAN_TELEPORT, 1.0F, 1.0F);
             }
     }
 
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (label.equalsIgnoreCase("giveaspectoftheend") && args.length == 0) {
             Player player = (Player) sender;
-            player.sendMessage("gaydsauhdasiydbwai");
             ItemStack aspect_of_the_end = new ItemStack(Material.DIAMOND_SWORD);
             ItemMeta aspect_of_the_endMeta = aspect_of_the_end.getItemMeta();
             aspect_of_the_endMeta.setDisplayName("§9Aspect of the End");

@@ -15,7 +15,7 @@ public class clearchat implements CommandExecutor, Listener {
         if (commandLabel.equalsIgnoreCase("clearchat") && args.length == 0) {
         }
         Player player = (Player) sender;
-        Bukkit.broadcastMessage(" ");
+        Bukkit.broadcastMessage(ChatColor.AQUA + "How did you find this???????!?!?!??!");
         Bukkit.broadcastMessage(" ");
         Bukkit.broadcastMessage(" ");
         Bukkit.broadcastMessage(" ");

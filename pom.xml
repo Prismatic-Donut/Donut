@@ -6,7 +6,7 @@
 
     <groupId>donutcodes</groupId>
     <artifactId>Donut</artifactId>
-    <version>0.01-prerelease2</version>
+    <version>0.01-prerelease3</version>
     <packaging>jar</packaging>
 
     <name>Donut</name>
