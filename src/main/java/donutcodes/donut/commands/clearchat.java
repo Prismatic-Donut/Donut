@@ -1093,6 +1093,7 @@ public class clearchat implements CommandExecutor, Listener {
         Bukkit.broadcastMessage(" ");
         Bukkit.broadcastMessage(" ");
         Bukkit.broadcastMessage(" ");
+        Bukkit.broadcastMessage(" ");
         Bukkit.broadcastMessage(ChatColor.RED + "----------------------");
         Bukkit.broadcastMessage(ChatColor.RED + "Chat has been cleared!");
         Bukkit.broadcastMessage(ChatColor.RED + "----------------------");
